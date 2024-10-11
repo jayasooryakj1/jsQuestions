@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+	<form>
+		<input type="text" id="p" placeholder="Principle">
+		<input type="text" id="r" placeholder="Rate of Interest">
+		<input type="text" id="t" placeholder="Time">
+		<button type="button" onclick="add()">Submit</button>
+		<div>
+			<input type="text" id="ci" placeholder="Compound Interest">
+		</div>
+	</form>
+
+<script>
+	function add(){
+		var p=parseInt(document.getElementById("p").value);
+		var r=parseInt(document.getElementById("r").value);
+		var t=parseInt(document.getElementById("t").value);
+		document.getElementById("ci").value=((p*(1-(r/100)))**t)-p;
+	}
+</script>
+</body>
+</html>

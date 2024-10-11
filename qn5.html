@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+	<form>
+		<input type="text" id="p" placeholder="Principle">
+		<input type="text" id="r" placeholder="Rate">
+		<input type="text" id="t" placeholder="Time">
+		<button type="button" onclick="add()">Submit</button>
+		<div>
+			<input type="text" id="si" placeholder="Simple Interest">
+		</div>
+	</form>
+
+<script>
+	function add(){
+		var p=parseInt(document.getElementById("p").value);
+		var r=parseInt(document.getElementById("r").value);
+		var t=parseInt(document.getElementById("t").value);
+		document.getElementById("si").value=((p*r*t)/100);	
+	}
+</script>
+</body>
+</html>
