@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+	<form>
+		<input type="text" id="num1" placeholder="Enter number 1">
+		<input type="text" id="num2" placeholder="Enter number 2">
+		<input type="text" id="num3" placeholder="Enter number 3">
+		<button type="button" onclick="add()">Submit</button>
+		<div>
+			<input type="text" id="sum" placeholder="Sum">
+		</div>
+		<div>
+			<input type="text" id="avg" placeholder="Average">
+		</div>
+	</form>
+
+<script>
+	function add(){
+		var n1=parseInt(document.getElementById("num1").value);
+		var n2=parseInt(document.getElementById("num2").value);
+		var n3=parseInt(document.getElementById("num3").value);
+		document.getElementById("sum").value=n1+n2+n3;	
+		document.getElementById("avg").value=((n1+n2+n3)/3);
+	}
+</script>
+</body>
+</html>
