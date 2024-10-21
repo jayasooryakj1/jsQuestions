@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+	<form>
+		<input type="text" id="n1" placeholder="Enter number">
+		<button type="button" onclick="add()">Submit</button>
+		<div>
+			<input type="text" id="eo" placeholder="Even/Odd">
+		</div>
+	</form>
+
+<script>
+	function add(){
+		var n1=parseFloat(document.getElementById("n1").value);
+		if(n1%2==0)
+			document.getElementById("eo").value="even";
+		else
+			document.getElementById("eo").value="odd";
+	}
+</script>
+</body>
+</html>

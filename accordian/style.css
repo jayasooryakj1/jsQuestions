@@ -1,0 +1,19 @@
+body{
+	font-family:arial;
+}
+
+.header{
+	padding:20px;
+	border-radius:20px;
+}
+
+.header:hover{
+	box-shadow:1px 2px 3px 4px grey;
+	cursor:pointer;
+	background-color:rgb(240, 242, 237);
+}
+
+.accBody{
+	background-color:rgb(245, 245, 245);
+	padding:20px;
+}
